@@ -70,6 +70,7 @@ def one(input1, input2):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
+
 	return ""
 
 
@@ -95,7 +96,14 @@ def two(input):
 	# No Hints for this question
 
 def three(arg1):
-	return "null"
+	if arg1%3 == 0 and arg1%5 == 0:
+		return "fizzbuzz"
+	elif arg1%5 == 0:
+		return "buzz"
+	elif arg1%3 == 0:
+		return "fizz"
+	else:
+		return "null"
 
 
 	# <QUESTION 4>
