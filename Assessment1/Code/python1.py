@@ -195,7 +195,15 @@ def six(input):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    return 0
+	letter = list(input)
+	number_of_vowels = 0
+	the_vowels = ["a", "e", "i", "o", "u"]
+	for i in letter:
+		if i in the_vowels:
+			number_of_vowels + 1
+			return number_of_vowels
+		else:
+			return 0
 
 	# <QUESTION 8>
 
@@ -234,7 +242,14 @@ def eight(input):
 	# Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-	return -1
+	inputString.replace(" ", "")
+	if char in inputString:
+		occurence = inputString.find(char)
+		position = occurence + 1
+		return position
+	else:
+		return -1
+	
 
 	# <QUESTION 10>
 
