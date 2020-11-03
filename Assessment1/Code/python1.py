@@ -201,9 +201,8 @@ def seven(input):
 	for i in letter:
 		if i in the_vowels:
 			number_of_vowels + 1
-			return number_of_vowels
-		else:
-			return 0
+	return number_of_vowels
+		
 
 	# <QUESTION 8>
 
@@ -246,9 +245,7 @@ def nine(inputString, char):
 	if char in inputString:
 		occurence = inputString.find(char)
 		position = occurence + 1
-		return position
-	else:
-		return -1
+	return position
 	
 
 	# <QUESTION 10>
