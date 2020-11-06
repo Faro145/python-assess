@@ -116,9 +116,16 @@ def four(input1, input2):
 	# <HINT>
 	# There is a module which can be used to generate random numbers, this module is called random.
 	# The random module contains a function called randint.
+import random
 
 def five():
-    return []
+	input = []
+	i = 0
+	for i in range(5):
+		num = random.randint(100, 200)
+		input.append(num)
+		i = i + 1	       
+	return input
 
 	# <QUESTION 6>
 
@@ -164,7 +171,17 @@ def six(input):
 	# Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
-	return False
+	one = b - a
+	two = b - c
+
+	if one > 2: 
+		return False
+	elif two > 4:
+		return False
+	elif c%2 != 0:
+		return False
+	else:
+		return True
 
 	# <QUESTION 8>
 
@@ -199,6 +216,14 @@ def eight(input,  a):
 	# There are no hints for this question.
 
 def nine(string1, string2):
+    list_string1 = list(string1)
+    list_string2 = list(string2)
+    for index in range(len(list_string1)):
+        item_to_remove = list_string1[index]
+        del list_string1[index]
+        if list_string1 == list_string2:
+            return True
+        list_string1.insert(index, item_to_remove)
     return False
 
 	# <QUESTION 10>
