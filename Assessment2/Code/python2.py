@@ -137,6 +137,9 @@ def five():
 	# There are no hints for this question.
     
 def six(input):
+	upper_case = input.upper()
+	if upper_case[len(upper_case) - 2:] == 'PY':
+		return True
 	return False
 
 	# <QUESTION 7>
