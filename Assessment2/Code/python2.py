@@ -50,7 +50,11 @@ def one(input):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(input):
-    return False
+	for i in range(2, input):
+		if input%i == 0: 
+			return False
+		else:
+			return True
 
 	# <QUESTION 3>
 
@@ -67,7 +71,8 @@ def two(input):
 	# What happens if you multiply a string by a number?
 
 def three(a):
-	return 1
+	answer = a + (a*11) + (a*111) + (a*1111)
+	return answer
 
 	# <QUESTION 4>
 
