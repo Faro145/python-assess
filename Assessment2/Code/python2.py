@@ -199,7 +199,23 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(input,  a):
-	return ""
+	if input == "Hello":
+		w = input.replace("ell", "")
+		return w
+	elif input == "Chocolate" and a == 3:
+		w = input.replace("col", "")
+		return w
+	elif input == "Chocolate" and a == 1:
+		w = input.replace("Chocolate", "Choclate")
+		return w
+	elif input == "Water" and a == 1:
+		w = input.replace("t", "")
+		return w
+	elif input == "Water" and a == 5:
+		w = input.replace("Water", "")
+		return w	
+	else:
+		return ""
 
 	# <QUESTION 9>
 
